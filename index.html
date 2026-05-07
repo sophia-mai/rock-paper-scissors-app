@@ -10,10 +10,37 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!-- link tag links to an external CSS file to the HTML document -->
   </head>
+
   <body>
     <div class="container-fluid p-5 bg-dark text-white text-center">
       <h1>Let's play...</h1>
+    </div>
+    <div class="container my-5">
+      <div class="row gap-2">
+        <div class="col-sm">
+          <button id="rock" class="btn btn-primary btn-lg w-100">Rock</button>
+        </div>
+        <div class="col-sm">
+          <button id="paper" class="btn btn-primary btn-lg w-100">Paper</button>
+        </div>
+        <div class="col-sm">
+          <button id="scissors" class="btn btn-primary btn-lg w-100">
+            Scissors
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 id="result" class="card-title">Draw!</h5>
+          <div id="message">
+            You selected scissors!<br />The computer chose scissors!
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -21,18 +48,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <div class="container my-5">
-      <div class="row gap-2">
-        <div class="col-sm">
-          <button class="btn btn-primary btn-lg w-100">Rock</button>
-        </div>
-        <div class="col-sm">
-          <button class="btn btn-primary btn-lg w-100">Paper</button>
-        </div>
-        <div class="col-sm">
-          <button class="btn btn-primary btn-lg w-100">Scissors</button>
-        </div>
-      </div>
-    </div>
+    <script src="index.js"></script>
   </body>
 </html>
